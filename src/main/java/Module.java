@@ -4,8 +4,8 @@
 @Entity
 public class Module {
     @Id
-    @GeneratedValue
-    private String _id;
+    @GeneratedValue(strategy=AUTO)
+    private int id;
 
     @ManyToOne
     private Parcours parcour;

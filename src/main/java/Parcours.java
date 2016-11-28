@@ -7,7 +7,7 @@ import java.util.ArrayList;
 @Entity
 public class Parcours {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy=AUTO)
     private int id;
 
     @OneToMany(mappedBy = "parcour")

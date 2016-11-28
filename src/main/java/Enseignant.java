@@ -6,7 +6,7 @@ import java.util.ArrayList;
 @Entity
 public class Enseignant {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy=AUTO)
     private int id;
 
     @ManyToOne
