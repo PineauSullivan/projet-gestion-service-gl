@@ -10,8 +10,9 @@ public class Parcours {
     @GeneratedValue
     private int id;
 
-    @OneToMany(mappedBy="Module")
+    @OneToMany(mappedBy = "parcour")
     private ArrayList<Module> listeDesModules;
+
     private Departement departement;
 
     public Parcours(Departement departement, Module module) {
