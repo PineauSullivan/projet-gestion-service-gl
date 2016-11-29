@@ -1,4 +1,7 @@
+import javax.persistence.*;
 import java.util.ArrayList;
+
+import static javax.persistence.GenerationType.AUTO;
 
 /**
  * Created by Sébastien on 28/11/2016.
@@ -13,6 +16,7 @@ public class Parcours {
     @OneToMany(mappedBy = "parcour")
     private ArrayList<Module> listeDesModules;
 
+    @ManyToOne
     private Departement departement;
 
     public Parcours(Departement departement, Module module) {
