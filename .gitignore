@@ -6,3 +6,5 @@
 .idea/compiler.xml
 gestionservice.iml
 .idea/libraries/Maven__javax_persistence_persistence_api_1_0_2.xml
+target/classes/CasSpecial.class
+*.class
