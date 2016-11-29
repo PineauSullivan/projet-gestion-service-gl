@@ -1,3 +1,11 @@
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+
+import java.util.Date;
+
+import static javax.persistence.GenerationType.AUTO;
+
 /**
  * Created by Sébastien on 28/11/2016.
  */
@@ -10,5 +18,5 @@ public class Demande {
     Enseignant enseignant;
 
     Boolean publie;
-    Boolean heures;
+    Date heures;
 }

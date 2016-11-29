@@ -19,4 +19,7 @@ public class Module {
 
     @ManyToMany
     private ArrayList<Enseignant> enseignants;
+
+    @OneToMany(mappedBy= "module")
+    private ArrayList<Enseignement> enseignements;
 }

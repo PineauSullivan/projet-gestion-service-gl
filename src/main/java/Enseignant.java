@@ -1,4 +1,7 @@
+import javax.persistence.*;
 import java.util.ArrayList;
+
+import static javax.persistence.GenerationType.AUTO;
 
 /**
  * Created by E124533M on 07/11/16.
@@ -14,8 +17,11 @@ public class Enseignant {
 
     private String _nom;
     private String _prenom;
-    private Boolean statut;
+    private String statut;
 
-    @OneToMany(mappedBy= "enseignant")
+    @ManyToOne
+    private Contrat contrat;
+
+    @OneToMany(mappedBy= "enseignants")
     private ArrayList<Demande> _listeDesVoeux;
 }
