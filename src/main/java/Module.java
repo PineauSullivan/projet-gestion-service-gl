@@ -1,6 +1,13 @@
 /**
  * Created by Sébastien on 28/11/2016.
  */
+import javax.persistence.*;
+
+import java.util.ArrayList;
+
+import static javax.persistence.GenerationType.AUTO;
+
+
 @Entity
 public class Module {
     @Id
@@ -10,5 +17,6 @@ public class Module {
     @ManyToOne
     private Parcours parcour;
 
-    private String _nom;
+    @ManyToMany
+    private ArrayList<Enseignant> enseignants;
 }
