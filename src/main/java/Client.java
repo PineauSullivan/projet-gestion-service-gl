@@ -1,4 +1,3 @@
-package fr.nantes.spring.rmi;
 
 import java.util.List;
 
