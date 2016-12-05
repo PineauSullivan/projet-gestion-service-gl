@@ -22,6 +22,6 @@ public class Enseignant {
     @ManyToOne
     private Contrat contrat;
 
-    @OneToMany(mappedBy= "enseignants")
+    @OneToMany(mappedBy= "enseignant")
     private ArrayList<Demande> _listeDesVoeux;
 }
