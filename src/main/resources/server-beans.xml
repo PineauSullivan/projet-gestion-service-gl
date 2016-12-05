@@ -5,7 +5,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-<bean id="studentService" class="fr.nantes.spring.rmi.StudentServiceImpl">
+<bean id="studentService" class="StudentServiceImpl">
     <!-- any additional properties, maybe a DAO? -->
 </bean>
 
@@ -13,7 +13,7 @@
     <!-- does not necessarily have to be the same name as the bean to be exported -->
     <property name="serviceName" value="StudentService"/>
     <property name="service" ref="studentService"/>
-    <property name="serviceInterface" value="fr.nantes.spring.rmi.StudentService"/>
+    <property name="serviceInterface" value="StudentService"/>
     <!-- defaults to 1099 -->
     <property name="replaceExistingBinding" value="true"></property>
     <property name="registryPort" value="1099"/>

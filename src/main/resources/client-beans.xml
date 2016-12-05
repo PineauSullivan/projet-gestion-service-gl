@@ -5,6 +5,6 @@
 	
 	<bean id="studentBean" class="org.springframework.remoting.rmi.RmiProxyFactoryBean">
 		<property name="serviceUrl" value="rmi://localhost:1099/StudentService"></property>
-		<property name="serviceInterface" value="fr.nantes.spring.rmi.StudentService"></property>
+		<property name="serviceInterface" value="StudentService"></property>
 	</bean>
 </beans>
