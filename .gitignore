@@ -8,3 +8,6 @@ gestionservice.iml
 .idea/libraries/Maven__javax_persistence_persistence_api_1_0_2.xml
 target/classes/CasSpecial.class
 *.class
+.idea/*
+target/classes/logback-test.xml
+target/test-classes/logback-test.xml
