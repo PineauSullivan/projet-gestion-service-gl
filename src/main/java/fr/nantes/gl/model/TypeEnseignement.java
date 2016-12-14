@@ -1,6 +1,6 @@
-/**
- * Created by Sébastien on 29/11/2016.
- */
+package fr.nantes.gl.model;
+
+
 public enum TypeEnseignement {
 
     CM,
