@@ -53,4 +53,19 @@ public class Parcours {
     public Set<Module> getModules() {
         return modules;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Parcours parcours = (Parcours) o;
+
+        return nom.equals(parcours.nom);
+    }
+
+    @Override
+    public int hashCode() {
+        return nom.hashCode();
+    }
 }
