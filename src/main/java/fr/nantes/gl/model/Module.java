@@ -43,4 +43,19 @@ public class Module {
     public Set<Enseignement> getEnseignements() {
         return enseignements;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Module module = (Module) o;
+
+        return nom.equals(module.nom);
+    }
+
+    @Override
+    public int hashCode() {
+        return nom.hashCode();
+    }
 }
