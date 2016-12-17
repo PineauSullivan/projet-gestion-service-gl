@@ -1,3 +1,5 @@
+package fr.nantes.gl.model.intervention;
+
 public class Intervention {
 
     private Service service;

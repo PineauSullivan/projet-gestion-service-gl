@@ -1,4 +1,4 @@
-package fr.nantes.gl.model;
+package fr.nantes.gl.model.departement;
 
 import java.util.HashSet;
 import java.util.Set;

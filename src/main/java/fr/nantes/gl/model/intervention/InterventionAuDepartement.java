@@ -1,3 +1,7 @@
+package fr.nantes.gl.model.intervention;
+
+import fr.nantes.gl.model.souhait.Voeu;
+
 public class InterventionAuDepartement extends Intervention {
 
     private Voeu voeu;

@@ -1,3 +1,5 @@
+package fr.nantes.gl.model.souhait;
+
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;

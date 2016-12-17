@@ -72,7 +72,7 @@ Chef de département.
 
 \subsubsection{Spécification OCL}
 \begin{ocl}
-context UC::AffecterEnseignements(dep:Departement, voeux:Voeu[*])
+context UC::AffecterEnseignements(dep:fr.nantes.gl.model.departement.Departement, voeux:Voeu[*])
 post:
 voeux->forAll(each:Voeux| let int = each.intervention in
 	int.oclIsNew() and int.enseignant = each.enseignant and
@@ -81,7 +81,7 @@ voeux->forAll(each:Voeux| let int = each.intervention in
  \end{ocl}
 
 \begin{ocl}
-context UC::AffecterDemandeExterieure(dep:Departement, d:DemandeExterieure)
+context UC::AffecterDemandeExterieure(dep:fr.nantes.gl.model.departement.Departement, d:DemandeExterieure)
 post: let i = d.intervention in
 	i.oclIsNew() and t.enseignement = d.enseignant and
 	dep.interventions->includes(d.intervention)
@@ -90,20 +90,20 @@ post: let i = d.intervention in
 -- Cette affectation est effectuée par le département.
 
 \begin{ocl}
-context UC::AffecterDemandeSpeciale(dep:Departement, ds:DemandeSpeciale)
+context UC::AffecterDemandeSpeciale(dep:fr.nantes.gl.model.departement.Departement, ds:DemandeSpeciale)
 post: let speciale = ds.intervention in
 	speciale.oclIsNew() and speciale.enseignant = ds.enseignant
--- La DemandeSpeciale réalisée donne lieu à un CasSpecial qui fait parti de la liste d`affectation 
+-- La DemandeSpeciale réalisée donne lieu à un fr.nantes.gl.model.intervention.CasSpecial qui fait parti de la liste d`affectation
 -- de l`enseignant (celui qui a émis cete DemandeSpeciale : de.emet). 
 -- Cette réalisation est effectuée par le  département.
 \end{ocl}
 
 \begin{ocl}
-context Departement::imposeInterventionDepartement(dep:Departement, ens:Enseignant, e:Enseignement)
-post: Intervention.allInstances()->exists(i : Intervention |
+context fr.nantes.gl.model.departement.Departement::imposeInterventionDepartement(dep:fr.nantes.gl.model.departement.Departement, ens:Enseignant, e:Enseignement)
+post: fr.nantes.gl.model.intervention.Intervention.allInstances()->exists(i : fr.nantes.gl.model.intervention.Intervention |
 	i.oclIsNew() and i.enseignement = e and i.enseignant = e)
 -- L`enseignement est lié à une unique InterventionDepartement qui appartient à la liste des affectations 
--- de l'enseignant ens. C'est le département qui impose cette Intervention.
+-- de l'enseignant ens. C'est le département qui impose cette fr.nantes.gl.model.intervention.Intervention.
 \end{ocl}
 
 
@@ -182,10 +182,10 @@ L'imposition d'une intervention à un enseignant crée une instance de la classe
  \indent L'imposition d'une affectation de type ``cas spécial'' à un enseignant crée une instance de la classe \textbf{CasSpécial} associée à l'enseignant concerné. Ce ``cas spécial'' n'est pas lié à une demande spéciale (puisqu'elle a été imposée).
 
  \begin{ocl}
- context Departement::imposeCasSpecial(ens : Enseignant, c : CasSpecial)
+ context fr.nantes.gl.model.departement.Departement::imposeCasSpecial(ens : Enseignant, c : fr.nantes.gl.model.intervention.CasSpecial)
  post : ens.est_affecte_pour -> include(c)
  \end{ocl}
- \emph{Le CasSpecial c, appartient à la liste des affectations de l'enseignant ens. C'est le chef de département qui impose ce CasSpecial.}
+ \emph{Le fr.nantes.gl.model.intervention.CasSpecial c, appartient à la liste des affectations de l'enseignant ens. C'est le chef de département qui impose ce fr.nantes.gl.model.intervention.CasSpecial.}
 
 
 %Afin d'avoir une vue plus globale de l'application, nous avons rédigé quelques scénarii faisant intervenir différents acteurs et différents cas d'utilisation. Ces scénarii sont exprimés sous la forme de diagrammes de séquence.
@@ -495,7 +495,7 @@ ou les enseignements affectés et ceux non affectés.\\
  \indent L'assignation d'un nouvel enseignant au département provoque l'ajout d'une instance de la classe \textbf{Enseignant} ainsi que du contrat de service qui lui est associé (instance de la classe \textbf{ContratDeService}).
 
  \begin{verbatim}
- context Departement::assignerEnseignant(e : Enseignant)
+ context fr.nantes.gl.model.departement.Departement::assignerEnseignant(e : Enseignant)
  post : self.enseignant.include(e)
         and not e.contratdeservice.isUndefined()
  \end{verbatim}
@@ -520,7 +520,7 @@ ou les enseignements affectés et ceux non affectés.\\
  \indent L'assignation d'un responsable de module associe un enseignant au module dont il devient le responsable.
 
  \begin{verbatim}
- context Departement::assignerResponsable(m : Module, ens : Enseignant)
+ context fr.nantes.gl.model.departement.Departement::assignerResponsable(m : Module, ens : Enseignant)
  post : m.est_responsable_de = ens
  \end{verbatim}
  \emph{L'enseignant ens devient responsable du module m. Cette assignation est réalisée par le chef de département}

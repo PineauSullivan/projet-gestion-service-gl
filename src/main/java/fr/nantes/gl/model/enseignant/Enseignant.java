@@ -1,11 +1,13 @@
+package fr.nantes.gl.model.enseignant;
+
+import fr.nantes.gl.model.departement.Departement;
+import fr.nantes.gl.model.souhait.Demande;
+
 import javax.persistence.*;
 import java.util.ArrayList;
 
 import static javax.persistence.GenerationType.AUTO;
 
-/**
- * Created by E124533M on 07/11/16.
- */
 @Entity
 public class Enseignant {
     @Id

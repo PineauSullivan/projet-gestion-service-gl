@@ -220,7 +220,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Capture']/@ownedRepresentations[name='Use%20Case%20Diagram']/@defaultLayer/@nodeMappings[name='UCD_Actor']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_OzbC8JVsEeazW_04_wbKtA" name="Enseignant" outgoingEdges="_MSoHwJlqEeahA67C0Vl-eA" incomingEdges="_y4mMIJbyEeaVJtnna7ptvw _zfDvMJbyEeaVJtnna7ptvw" width="3" height="3" resizeKind="NSEW">
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_OzbC8JVsEeazW_04_wbKtA" name="fr.nantes.gl.model.enseignant.Enseignant" outgoingEdges="_MSoHwJlqEeahA67C0Vl-eA" incomingEdges="_y4mMIJbyEeaVJtnna7ptvw _zfDvMJbyEeaVJtnna7ptvw" width="3" height="3" resizeKind="NSEW">
         <target xmi:type="uml:Actor" href="model.uml#_Ozab4JVsEeazW_04_wbKtA"/>
         <semanticElements xmi:type="uml:Actor" href="model.uml#_Ozab4JVsEeazW_04_wbKtA"/>
         <semanticElements xmi:type="ecore:EAnnotation" href="model.uml#_Ozab4ZVsEeazW_04_wbKtA"/>
@@ -924,7 +924,7 @@
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Class%20Diagram']/@defaultLayer/@containerMappings[name='CD_ReusedMappingForFeatures']/@subNodeMappings[name='CD_Property']"/>
         </ownedElements>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_M-i9oJW8EeaJndJbeEalTw" name="Enseignant" tooltipText="Gestion des services - Analyse::Enseignant" outgoingEdges="_LABpsJllEeahA67C0Vl-eA _Svw8kJllEeahA67C0Vl-eA _yS_SwJllEeahA67C0Vl-eA" incomingEdges="_6zOnQJW8EeaJndJbeEalTw" width="12" height="10">
+      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_M-i9oJW8EeaJndJbeEalTw" name="fr.nantes.gl.model.enseignant.Enseignant" tooltipText="Gestion des services - Analyse::fr.nantes.gl.model.enseignant.Enseignant" outgoingEdges="_LABpsJllEeahA67C0Vl-eA _Svw8kJllEeahA67C0Vl-eA _yS_SwJllEeahA67C0Vl-eA" incomingEdges="_6zOnQJW8EeaJndJbeEalTw" width="12" height="10">
         <target xmi:type="uml:Class" href="model.uml#_M-iWkJW8EeaJndJbeEalTw"/>
         <semanticElements xmi:type="uml:Class" href="model.uml#_M-iWkJW8EeaJndJbeEalTw"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -1060,7 +1060,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Class%20Diagram']/@defaultLayer/@containerMappings[name='CD_DataType']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_KFtA4JW_EeaJndJbeEalTw" name="Contrat" tooltipText="Gestion des services - Analyse::Contrat" incomingEdges="_Svw8kJllEeahA67C0Vl-eA" width="12" height="10">
+      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_KFtA4JW_EeaJndJbeEalTw" name="fr.nantes.gl.model.enseignant.Contrat" tooltipText="Gestion des services - Analyse::fr.nantes.gl.model.enseignant.Contrat" incomingEdges="_Svw8kJllEeahA67C0Vl-eA" width="12" height="10">
         <target xmi:type="uml:Class" href="model.uml#_KFsZ0JW_EeaJndJbeEalTw"/>
         <semanticElements xmi:type="uml:Class" href="model.uml#_KFsZ0JW_EeaJndJbeEalTw"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -1088,7 +1088,7 @@
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Class%20Diagram']/@defaultLayer/@containerMappings[name='CD_ReusedMappingForFeatures']/@subNodeMappings[name='CD_Property']"/>
         </ownedElements>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_dq6s8JW_EeaJndJbeEalTw" name="Demande" tooltipText="Gestion des services - Analyse::Demande" incomingEdges="_XFmvYJXLEeaJndJbeEalTw _YaBkoJXLEeaJndJbeEalTw _ZDLPUJXLEeaJndJbeEalTw _LABpsJllEeahA67C0Vl-eA" width="12" height="10">
+      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_dq6s8JW_EeaJndJbeEalTw" name="fr.nantes.gl.model.souhait.Demande" tooltipText="Gestion des services - Analyse::fr.nantes.gl.model.souhait.Demande" incomingEdges="_XFmvYJXLEeaJndJbeEalTw _YaBkoJXLEeaJndJbeEalTw _ZDLPUJXLEeaJndJbeEalTw _LABpsJllEeahA67C0Vl-eA" width="12" height="10">
         <target xmi:type="uml:Class" href="model.uml#_dq6F4JW_EeaJndJbeEalTw"/>
         <semanticElements xmi:type="uml:Class" href="model.uml#_dq6F4JW_EeaJndJbeEalTw"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -1116,7 +1116,7 @@
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Class%20Diagram']/@defaultLayer/@containerMappings[name='CD_ReusedMappingForFeatures']/@subNodeMappings[name='CD_Property']"/>
         </ownedElements>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_q9puUZW_EeaJndJbeEalTw" name="Intervention" tooltipText="Gestion des services - Analyse::Intervention" incomingEdges="_0JAZMJllEeahA67C0Vl-eA _8vE3IJllEeahA67C0Vl-eA _9T3mQJllEeahA67C0Vl-eA _90BtAJllEeahA67C0Vl-eA" width="12" height="10">
+      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_q9puUZW_EeaJndJbeEalTw" name="fr.nantes.gl.model.intervention.Intervention" tooltipText="Gestion des services - Analyse::fr.nantes.gl.model.intervention.Intervention" incomingEdges="_0JAZMJllEeahA67C0Vl-eA _8vE3IJllEeahA67C0Vl-eA _9T3mQJllEeahA67C0Vl-eA _90BtAJllEeahA67C0Vl-eA" width="12" height="10">
         <target xmi:type="uml:Class" href="model.uml#_q9puUJW_EeaJndJbeEalTw"/>
         <semanticElements xmi:type="uml:Class" href="model.uml#_q9puUJW_EeaJndJbeEalTw"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -1136,7 +1136,7 @@
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Class%20Diagram']/@defaultLayer/@containerMappings[name='CD_ReusedMappingForFeatures']/@subNodeMappings[name='CD_Property']"/>
         </ownedElements>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_6tz0YJW_EeaJndJbeEalTw" name="Intervention au Departement" tooltipText="Gestion des services - Analyse::Intervention au Departement" outgoingEdges="_90BtAJllEeahA67C0Vl-eA _Mi6jUJlmEeahA67C0Vl-eA" width="12" height="10">
+      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_6tz0YJW_EeaJndJbeEalTw" name="fr.nantes.gl.model.intervention.Intervention au Departement" tooltipText="Gestion des services - Analyse::fr.nantes.gl.model.intervention.Intervention au Departement" outgoingEdges="_90BtAJllEeahA67C0Vl-eA _Mi6jUJlmEeahA67C0Vl-eA" width="12" height="10">
         <target xmi:type="uml:Class" href="model.uml#_6tzNUJW_EeaJndJbeEalTw"/>
         <semanticElements xmi:type="uml:Class" href="model.uml#_6tzNUJW_EeaJndJbeEalTw"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -1148,7 +1148,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Class%20Diagram']/@defaultLayer/@containerMappings[name='CD_Class']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_-pmUgJW_EeaJndJbeEalTw" name="Intervention Extérieure" tooltipText="Gestion des services - Analyse::Intervention Extérieure" outgoingEdges="_9T3mQJllEeahA67C0Vl-eA" width="12" height="10">
+      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_-pmUgJW_EeaJndJbeEalTw" name="fr.nantes.gl.model.intervention.Intervention Extérieure" tooltipText="Gestion des services - Analyse::fr.nantes.gl.model.intervention.Intervention Extérieure" outgoingEdges="_9T3mQJllEeahA67C0Vl-eA" width="12" height="10">
         <target xmi:type="uml:Class" href="model.uml#_-pltcJW_EeaJndJbeEalTw"/>
         <semanticElements xmi:type="uml:Class" href="model.uml#_-pltcJW_EeaJndJbeEalTw"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -1172,7 +1172,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Class%20Diagram']/@defaultLayer/@containerMappings[name='CD_Class']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_Jdf78JXAEeaJndJbeEalTw" name="Voeu" tooltipText="Gestion des services - Analyse::Voeu" outgoingEdges="_XFmvYJXLEeaJndJbeEalTw _22mdUJlkEeahA67C0Vl-eA" incomingEdges="_Mi6jUJlmEeahA67C0Vl-eA" width="12" height="10">
+      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_Jdf78JXAEeaJndJbeEalTw" name="fr.nantes.gl.model.souhait.Voeu" tooltipText="Gestion des services - Analyse::fr.nantes.gl.model.souhait.Voeu" outgoingEdges="_XFmvYJXLEeaJndJbeEalTw _22mdUJlkEeahA67C0Vl-eA" incomingEdges="_Mi6jUJlmEeahA67C0Vl-eA" width="12" height="10">
         <target xmi:type="uml:Class" href="model.uml#_JdfU4JXAEeaJndJbeEalTw"/>
         <semanticElements xmi:type="uml:Class" href="model.uml#_JdfU4JXAEeaJndJbeEalTw"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -1192,7 +1192,7 @@
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Class%20Diagram']/@defaultLayer/@containerMappings[name='CD_ReusedMappingForFeatures']/@subNodeMappings[name='CD_Property']"/>
         </ownedElements>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_MommAJXAEeaJndJbeEalTw" name="Demande Intervention Extérieure" tooltipText="Gestion des services - Analyse::Demande Intervention Extérieure" outgoingEdges="_YaBkoJXLEeaJndJbeEalTw" width="12" height="10">
+      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_MommAJXAEeaJndJbeEalTw" name="fr.nantes.gl.model.souhait.Demande fr.nantes.gl.model.intervention.Intervention Extérieure" tooltipText="Gestion des services - Analyse::fr.nantes.gl.model.souhait.Demande fr.nantes.gl.model.intervention.Intervention Extérieure" outgoingEdges="_YaBkoJXLEeaJndJbeEalTw" width="12" height="10">
         <target xmi:type="uml:Class" href="model.uml#_Mol-8JXAEeaJndJbeEalTw"/>
         <semanticElements xmi:type="uml:Class" href="model.uml#_Mol-8JXAEeaJndJbeEalTw"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -1212,7 +1212,7 @@
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Class%20Diagram']/@defaultLayer/@containerMappings[name='CD_ReusedMappingForFeatures']/@subNodeMappings[name='CD_Property']"/>
         </ownedElements>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_RBU5wJXAEeaJndJbeEalTw" name="Demande Spéciale" tooltipText="Gestion des services - Analyse::Demande Spéciale" outgoingEdges="_ZDLPUJXLEeaJndJbeEalTw" width="12" height="10">
+      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_RBU5wJXAEeaJndJbeEalTw" name="fr.nantes.gl.model.souhait.Demande Spéciale" tooltipText="Gestion des services - Analyse::fr.nantes.gl.model.souhait.Demande Spéciale" outgoingEdges="_ZDLPUJXLEeaJndJbeEalTw" width="12" height="10">
         <target xmi:type="uml:Class" href="model.uml#_RBUSsJXAEeaJndJbeEalTw"/>
         <semanticElements xmi:type="uml:Class" href="model.uml#_RBUSsJXAEeaJndJbeEalTw"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -1335,7 +1335,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Class%20Diagram']/@defaultLayer/@edgeMappings[name='CD_Association']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_k_uF4JllEeahA67C0Vl-eA" name="Service" tooltipText="Gestion des services - Analyse::Service" outgoingEdges="_0JAZMJllEeahA67C0Vl-eA" incomingEdges="_yS_SwJllEeahA67C0Vl-eA" width="12" height="10">
+      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_k_uF4JllEeahA67C0Vl-eA" name="fr.nantes.gl.model.enseignant.Service" tooltipText="Gestion des services - Analyse::fr.nantes.gl.model.enseignant.Service" outgoingEdges="_0JAZMJllEeahA67C0Vl-eA" incomingEdges="_yS_SwJllEeahA67C0Vl-eA" width="12" height="10">
         <target xmi:type="uml:Class" href="model.uml#_k_s3wJllEeahA67C0Vl-eA"/>
         <semanticElements xmi:type="uml:Class" href="model.uml#_k_s3wJllEeahA67C0Vl-eA"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>

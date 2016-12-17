@@ -17,11 +17,11 @@ Chef de département & Acteur du système. Il est le responsable d'un \textbf{d�
 
 Conflit & Fait que deux \textbf{v\oe ux} soit incompatibles (i.e. que deux \textbf{enseignants} aient émis les mêmes choix concernant un ou des \textbf{enseignements}). C'est au \textbf{chef de département} de régler les conflits en réalisant les affectations. & &\\
 
-Contrat de service & Nombre d'heures minimum (et parfois nombre d'heures maximum) d'\textbf{enseignements} à effectuer pour un \textbf{enseignant} donné. Il est indépendant des \textbf{départements} dans lesquels l'\textbf{enseignant} intervient : il est unique et seulement déterminé par le statut de l'\textbf{enseignant}. & Classe & ContratDeService \\
+fr.nantes.gl.model.enseignant.Contrat de service & Nombre d'heures minimum (et parfois nombre d'heures maximum) d'\textbf{enseignements} à effectuer pour un \textbf{enseignant} donné. Il est indépendant des \textbf{départements} dans lesquels l'\textbf{enseignant} intervient : il est unique et seulement déterminé par le statut de l'\textbf{enseignant}. & Classe & ContratDeService \\
 
-Département & Entité administrative (d'une université) identifiée par un nom. Il comprend un ensemble de \textbf{modules} et d'\textbf{enseignants} qui lui sont rattachés. Chaque département a pour responsable un \textbf{chef de département}. Plusieurs \textbf{enseignants} peuvent donner des \textbf{enseignements} pour le compte de chaque \textbf{département}. & Classe & Departement  \\
+Département & Entité administrative (d'une université) identifiée par un nom. Il comprend un ensemble de \textbf{modules} et d'\textbf{enseignants} qui lui sont rattachés. Chaque département a pour responsable un \textbf{chef de département}. Plusieurs \textbf{enseignants} peuvent donner des \textbf{enseignements} pour le compte de chaque \textbf{département}. & Classe & fr.nantes.gl.model.departement.Departement  \\
 
-Enseignant & Personne "physique" travaillant pour le compte d'un \textbf{département} et identifiée par son nom, son prénom et son statut. Un enseignant peut "intervenir" dans différents \textbf{départements} pour dispenser un certain nombre d'\textbf{enseignements}. C'est un également un acteur du sytème puisqu'il peut effectuer des \textbf{v\oe ux} concernant les \textbf{enseignements} qu'il désire donner. & Classe et Acteur & Enseignant \\
+fr.nantes.gl.model.enseignant.Enseignant & Personne "physique" travaillant pour le compte d'un \textbf{département} et identifiée par son nom, son prénom et son statut. Un enseignant peut "intervenir" dans différents \textbf{départements} pour dispenser un certain nombre d'\textbf{enseignements}. C'est un également un acteur du sytème puisqu'il peut effectuer des \textbf{v\oe ux} concernant les \textbf{enseignements} qu'il désire donner. & Classe et Acteur & fr.nantes.gl.model.enseignant.Enseignant \\
 
 Enseignement & Entité administrative représentant un cours dans un \textbf{module} donné. Il existe trois types d'enseignement avec, pour chacun, un coefficient différent en terme de volume horaire:
 \begin{itemize}
@@ -30,12 +30,12 @@ Enseignement & Entité administrative représentant un cours dans un \textbf{mod
 \item TP : travaux pratiques se déroulant dans des salles particulières dédiées à cet effet (salles machines, laboratoires...), un TP vaut 2/3 d'un TD (ou 1 TD, cela dépend du statut de l'\textbf{enseignant} concerné).
 \end{itemize} & Classe & Enseignement, CM, TD, TP \\
 
-Intervention & Fait qu'un \textbf{enseignant} intervienne dans un \textbf{département} donné. Elle a pour origine, la plupart du temps, un \textbf{souhait} formulé par un \textbf{enseignant}. Cette intervention peut être de différentes natures:
+fr.nantes.gl.model.intervention.Intervention & Fait qu'un \textbf{enseignant} intervienne dans un \textbf{département} donné. Elle a pour origine, la plupart du temps, un \textbf{souhait} formulé par un \textbf{enseignant}. Cette intervention peut être de différentes natures:
 \begin{itemize}
 \item il peut s'agir d'une intervention dans le département, c'est-à-dire qu'un \textbf{enseignement} soit affecté à un \textbf{enseignant} pour un volume horaire donné;
 \item il peut s'agir d'une intervention extérieure (dans une entreprise, une autre école...), d'un volume horaire donné ;
 \item il peut s'agir d'un cas spécial (congés, maladies, encadrement d'un stage ou d'un TER...), toujours d'un volume horaire donné.
-\end{itemize} & Classe & Intervention, InterventionDépartement, InterventionExtérieure, CasSpécial \\
+\end{itemize} & Classe & fr.nantes.gl.model.intervention.Intervention, InterventionDépartement, InterventionExtérieure, CasSpécial \\
 
 Jouer & Terme employé dans la description du domaine. Action, faite par un \textbf{enseignant}, de formuler un certain nombre de \textbf{souhaits} qu'il pourra décider, par la suite, de publier (de soumettre au \textbf{chef de département} et aux autres \textbf{enseignants}) ou pas. & &\\ 
 
@@ -51,7 +51,7 @@ Souhait & Fait qu'un \textbf{enseignant} effectue une demande d'un certain type 
 \end{itemize}
 
 Un souhait peut être à l'origine d'une \textbf{intervention} affectée (déterminée) par le \textbf{chef de département} (ou plusieurs dans le cas d'un \textbf{v\oe u}).
-& Classe & Souhait, Voeu, DemandeInterventionExtérieure, DemandeSpéciale \\
+& Classe & Souhait, fr.nantes.gl.model.souhait.Voeu, DemandeInterventionExtérieure, DemandeSpéciale \\
 
 V\oe u & Choix fait par un \textbf{enseignant}, pour un \textbf{département} donné, indiquant quels \textbf{enseignements} il désire dispenser ainsi que ses préférences concernant ces \textbf{enseignements}. Les préférences pour un \textbf{enseignement} sont déterminées de la manière suivante:
 \begin{itemize}

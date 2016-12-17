@@ -5,7 +5,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-<bean id="studentService" class="StudentServiceImpl">
+<bean id="studentService" class="fr.nantes.gl.model.exemple.StudentServiceImpl">
     <!-- any additional properties, maybe a DAO? -->
 </bean>
 

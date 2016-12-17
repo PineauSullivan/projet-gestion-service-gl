@@ -1,7 +1,9 @@
-import javax.persistence.Entity;
+package fr.nantes.gl.model.enseignant;
+
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+
 import java.util.ArrayList;
 
 import static javax.persistence.GenerationType.AUTO;
@@ -9,19 +11,17 @@ import static javax.persistence.GenerationType.AUTO;
 /**
  * Created by Sébastien on 28/11/2016.
  */
-@Entity
-public class Departement {
+public class Contrat {
     @Id
     @GeneratedValue(strategy=AUTO)
     private int id;
 
-    private String nom;
+    @OneToMany(mappedBy="contrat")
+    private ArrayList<Enseignant> enseignants;
 
-    @OneToMany(mappedBy = "departement")
-    private ArrayList<Module> listeDesModules;
 
-    @OneToMany(mappedBy = "departement")
-    private ArrayList<Enseignant> listeDesEnseignants;
+    private int MIN;
+    private int MAX;
 
 
 }

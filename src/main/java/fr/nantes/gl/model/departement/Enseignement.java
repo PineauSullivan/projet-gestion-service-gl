@@ -1,4 +1,4 @@
-package fr.nantes.gl.model;
+package fr.nantes.gl.model.departement;
 
 public class Enseignement {
 

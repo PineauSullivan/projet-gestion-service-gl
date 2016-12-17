@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><umlet_diagram><element><type>com.umlet.element.base.Class</type><coordinates><x>360</x><y>54</y><w>220</w><h>96</h></coordinates><panel_attributes>Enseignant
+<?xml version="1.0" encoding="UTF-8"?><umlet_diagram><element><type>com.umlet.element.base.Class</type><coordinates><x>360</x><y>54</y><w>220</w><h>96</h></coordinates><panel_attributes>fr.nantes.gl.model.enseignant.Enseignant
 --
 nom: String
 prénom: String
@@ -22,7 +22,7 @@ volHoraireMax: Integer {optional}</panel_attributes><additional_attributes></add
 Souhait
 --
 publiée: Boolean</panel_attributes><additional_attributes></additional_attributes></element><element><type>com.umlet.element.base.Class</type><coordinates><x>940</x><y>234</y><w>180</w><h>66</h></coordinates><panel_attributes>&lt;&lt;abstract&gt;&gt;
-Intervention
+fr.nantes.gl.model.intervention.Intervention
 --
 /volumeHoraire: Integer</panel_attributes><additional_attributes></additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>400</x><y>454</y><w>620</w><h>110</h></coordinates><panel_attributes>lt=-
 m1=0..1
@@ -50,7 +50,7 @@ m1=1
 m2=0..*</panel_attributes><additional_attributes>20;20;160;20</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>420</x><y>270</y><w>130</w><h>94</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>20;20;20;54;110;54;110;74</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>200</x><y>130</y><w>190</w><h>154</h></coordinates><panel_attributes>lt=-
 m1=1
 m2=0..*
-&lt;est responsable de</panel_attributes><additional_attributes>170;20;170;94;90;94;90;134;20;134</additional_attributes></element><element><type>com.umlet.element.base.Class</type><coordinates><x>290</x><y>414</y><w>140</w><h>60</h></coordinates><panel_attributes>Voeu
+&lt;est responsable de</panel_attributes><additional_attributes>170;20;170;94;90;94;90;134;20;134</additional_attributes></element><element><type>com.umlet.element.base.Class</type><coordinates><x>290</x><y>414</y><w>140</w><h>60</h></coordinates><panel_attributes>fr.nantes.gl.model.souhait.Voeu
 --
 préférence: Integer</panel_attributes><additional_attributes></additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>399</x><y>130</y><w>82</w><h>114</h></coordinates><panel_attributes>lt=-
 m1=1
@@ -62,7 +62,7 @@ est affecté pour&gt;</panel_attributes><additional_attributes>20;20;20;74;500;7
 --
 </panel_attributes><additional_attributes></additional_attributes></element><element><type>com.umlet.element.base.Class</type><coordinates><x>950</x><y>424</y><w>160</w><h>60</h></coordinates><panel_attributes>InterventionExtérieure
 --
-</panel_attributes><additional_attributes></additional_attributes></element><element><type>com.umlet.element.base.Class</type><coordinates><x>890</x><y>344</y><w>100</w><h>60</h></coordinates><panel_attributes>CasSpecial
+</panel_attributes><additional_attributes></additional_attributes></element><element><type>com.umlet.element.base.Class</type><coordinates><x>890</x><y>344</y><w>100</w><h>60</h></coordinates><panel_attributes>fr.nantes.gl.model.intervention.CasSpecial
 --
 </panel_attributes><additional_attributes></additional_attributes></element><element><type>com.umlet.element.base.Class</type><coordinates><x>640</x><y>344</y><w>220</w><h>60</h></coordinates><panel_attributes>DemandeSpéciale
 --
