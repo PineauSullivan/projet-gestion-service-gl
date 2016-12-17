@@ -20,5 +20,44 @@ public class Contrat {
     private int MIN;
     private int MAX;
 
+    public Contrat(int MIN, int MAX) {
+        this.MIN = MIN;
+        this.MAX = MAX;
+    }
 
+    public void addEnseignant(Enseignant enseignant){
+        enseignants.add(enseignant);
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public ArrayList<Enseignant> getEnseignants() {
+        return enseignants;
+    }
+
+    public void setEnseignants(ArrayList<Enseignant> enseignants) {
+        this.enseignants = enseignants;
+    }
+
+    public int getMIN() {
+        return MIN;
+    }
+
+    public void setMIN(int MIN) {
+        this.MIN = MIN;
+    }
+
+    public int getMAX() {
+        return MAX;
+    }
+
+    public void setMAX(int MAX) {
+        this.MAX = MAX;
+    }
 }
