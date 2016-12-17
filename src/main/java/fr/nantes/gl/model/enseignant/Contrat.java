@@ -8,9 +8,6 @@ import java.util.ArrayList;
 
 import static javax.persistence.GenerationType.AUTO;
 
-/**
- * Created by Sébastien on 28/11/2016.
- */
 public class Contrat {
     @Id
     @GeneratedValue(strategy=AUTO)

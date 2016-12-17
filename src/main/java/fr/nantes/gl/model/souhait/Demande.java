@@ -10,9 +10,6 @@ import java.util.Date;
 
 import static javax.persistence.GenerationType.AUTO;
 
-/**
- * Created by Sébastien on 28/11/2016.
- */
 public class Demande {
     @Id
     @GeneratedValue(strategy=AUTO)
@@ -23,4 +20,10 @@ public class Demande {
 
     Boolean publie;
     Date heures;
+
+    public Demande(Enseignant enseignant, Boolean publie, Date heures) {
+        this.enseignant = enseignant;
+        this.publie = publie;
+        this.heures = heures;
+    }
 }

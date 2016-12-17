@@ -7,10 +7,6 @@ package fr.nantes.gl.model.exemple;/*
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- *
- * @author sunye
- */
 public class StudentServiceImpl implements StudentService {
 
 	List<Student> students = new ArrayList<Student>();

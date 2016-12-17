@@ -6,10 +6,6 @@ package fr.nantes.gl.model.exemple;/*
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-/**
- *
- * @author sunye
- */
 public class ServerLauncher {
 	public static void main(String[] args) {
 		

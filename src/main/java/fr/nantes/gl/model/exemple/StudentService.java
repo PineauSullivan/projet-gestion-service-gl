@@ -6,10 +6,6 @@ package fr.nantes.gl.model.exemple;/*
 
 import java.util.List;
 
-/**
- *
- * @author sunye
- */
 public interface StudentService {
 
 	public void insertStudent(Student aStudent);

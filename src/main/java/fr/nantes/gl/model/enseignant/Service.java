@@ -4,9 +4,6 @@ import fr.nantes.gl.model.intervention.Intervention;
 
 import java.util.HashSet;
 
-/**
- * Created by Sébastien on 29/11/2016.
- */
 public class Service {
     public Integer annee = Integer.valueOf(0);
     public HashSet<Intervention> interventions = new HashSet<Intervention>();

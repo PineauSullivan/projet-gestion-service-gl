@@ -6,10 +6,6 @@ package fr.nantes.gl.model.exemple;/*
 
 import java.io.Serializable;
 
-/**
- *
- * @author sunye
- */
 public class Student implements Serializable {
 
 	/**
