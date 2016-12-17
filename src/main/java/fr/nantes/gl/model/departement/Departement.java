@@ -2,10 +2,11 @@ package fr.nantes.gl.model.departement;
 
 import fr.nantes.gl.model.enseignant.Enseignant;
 
+import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
 
-public class Departement {
+public class Departement  implements Serializable {
 
     private String nom;
 

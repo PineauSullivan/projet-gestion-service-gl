@@ -62,5 +62,4 @@ public class Enseignement {
         return module;
     }
 
-
 }

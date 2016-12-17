@@ -31,8 +31,8 @@ public class Client {
 
 		Departement departementInfo = new Departement("informatique");
 		Contrat contrat = new Contrat(10,15);
-		Enseignant a = new Enseignant(departementInfo,"MonNom", "MonPrenom", "Prof", contrat);
-		Enseignant b = new Enseignant(departementInfo,"MonNom", "MonPrenom", "Prof", contrat);
+		Enseignant a = new Enseignant(departementInfo,"MonNom2", "MonPrenom2", "Prof", contrat);
+		Enseignant b = new Enseignant(departementInfo,"MonNom3", "MonPrenom3", "Prof", contrat);
 
 		es.insertEnseignent(a);
 		es.insertEnseignent(b);
@@ -40,7 +40,7 @@ public class Client {
 
 		List<Enseignant> accounts = es.getEnseignents();
 		for (Enseignant each : accounts) {
-			System.out.println(each);
+			System.out.println(each.get_prenom());
 		}
 
 	}

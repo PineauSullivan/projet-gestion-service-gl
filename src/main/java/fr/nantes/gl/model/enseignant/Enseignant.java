@@ -4,12 +4,13 @@ import fr.nantes.gl.model.departement.Departement;
 import fr.nantes.gl.model.souhait.Demande;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.ArrayList;
 
 import static javax.persistence.GenerationType.AUTO;
 
 @Entity
-public class Enseignant {
+public class Enseignant  implements Serializable {
     @Id
     @GeneratedValue(strategy=AUTO)
     private int id;

@@ -4,11 +4,12 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 import static javax.persistence.GenerationType.AUTO;
 
-public class Contrat {
+public class Contrat  implements Serializable {
     @Id
     @GeneratedValue(strategy=AUTO)
     private int id;
