@@ -25,11 +25,23 @@ public class Module {
     }
 
     public boolean ajouterEnseignements(Enseignement e){
-        return enseignements.add(e);
+        if(e.getModule()==null) {
+            if(enseignements.add(e)) {
+                e.setModule(this);
+                return true;
+            }
+        }
+        return false;
     }
 
     public boolean supprimerEnseignements(Enseignement e){
-        return enseignements.remove(e);
+        if(e.getModule()==this) {
+            if(enseignements.remove(e)){
+                e.unsetModule();
+                return true;
+            }
+        }
+        return false;
     }
 
     public Parcours getParcours(){
