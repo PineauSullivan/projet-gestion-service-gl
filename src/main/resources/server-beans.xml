@@ -5,18 +5,30 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-<bean id="studentService" class="fr.nantes.gl.model.exemple.StudentServiceImpl">
-    <!-- any additional properties, maybe a DAO? -->
+<!--<bean id="studentService" class="fr.nantes.gl.model.exemple.StudentServiceImpl">
+    &lt;!&ndash; any additional properties, maybe a DAO? &ndash;&gt;
 </bean>
 
 <bean class="org.springframework.remoting.rmi.RmiServiceExporter">
-    <!-- does not necessarily have to be the same name as the bean to be exported -->
+    &lt;!&ndash; does not necessarily have to be the same name as the bean to be exported &ndash;&gt;
     <property name="serviceName" value="StudentService"/>
     <property name="service" ref="studentService"/>
     <property name="serviceInterface" value="fr.nantes.gl.model.exemple.StudentService"/>
-    <!-- defaults to 1099 -->
+    &lt;!&ndash; defaults to 1099 &ndash;&gt;
     <property name="replaceExistingBinding" value="true"></property>
     <property name="registryPort" value="1099"/>
-</bean>
-   
+</bean>-->
+    <bean id="enseignantService" class="fr.nantes.gl.model.service.EnseignantServiceImpl">
+        <!-- any additional properties, maybe a DAO? -->
+    </bean>
+    <bean class="org.springframework.remoting.rmi.RmiServiceExporter">
+        <!-- does not necessarily have to be the same name as the bean to be exported -->
+        <property name="serviceName" value="EnseignantService"/>
+        <property name="service" ref="enseignantService"/>
+        <property name="serviceInterface" value="fr.nantes.gl.model.service.EnseignantService"/>
+        <!-- defaults to 1099 -->
+        <property name="replaceExistingBinding" value="true"></property>
+        <property name="registryPort" value="1099"/>
+    </bean>
+
 </beans>

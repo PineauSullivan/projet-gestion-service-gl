@@ -2,9 +2,13 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-	
-	<bean id="studentBean" class="org.springframework.remoting.rmi.RmiProxyFactoryBean">
+
+	<!--<bean id="studentBean" class="org.springframework.remoting.rmi.RmiProxyFactoryBean">
 		<property name="serviceUrl" value="rmi://localhost:1099/StudentService"></property>
 		<property name="serviceInterface" value="fr.nantes.gl.model.exemple.StudentService"></property>
+	</bean>-->
+	<bean id="enseignantBean" class="org.springframework.remoting.rmi.RmiProxyFactoryBean">
+		<property name="serviceUrl" value="rmi://localhost:1099/EnseignantService"></property>
+		<property name="serviceInterface" value="fr.nantes.gl.model.service.EnseignantService"></property>
 	</bean>
 </beans>
