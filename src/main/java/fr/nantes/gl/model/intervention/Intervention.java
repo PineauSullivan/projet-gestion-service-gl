@@ -1,5 +1,7 @@
 package fr.nantes.gl.model.intervention;
 
+import fr.nantes.gl.model.enseignant.Service;
+
 public class Intervention {
 
     private Service service;

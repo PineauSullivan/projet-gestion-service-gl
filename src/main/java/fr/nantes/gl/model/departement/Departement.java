@@ -1,5 +1,7 @@
 package fr.nantes.gl.model.departement;
 
+import fr.nantes.gl.model.enseignant.Enseignant;
+
 import java.util.HashSet;
 import java.util.Set;
 

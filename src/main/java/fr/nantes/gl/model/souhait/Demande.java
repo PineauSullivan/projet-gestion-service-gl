@@ -1,5 +1,7 @@
 package fr.nantes.gl.model.souhait;
 
+import fr.nantes.gl.model.enseignant.Enseignant;
+
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
