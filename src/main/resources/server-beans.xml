@@ -13,7 +13,7 @@
     <!-- does not necessarily have to be the same name as the bean to be exported -->
     <property name="serviceName" value="StudentService"/>
     <property name="service" ref="studentService"/>
-    <property name="serviceInterface" value="StudentService"/>
+    <property name="serviceInterface" value="fr.nantes.gl.model.exemple.StudentService"/>
     <!-- defaults to 1099 -->
     <property name="replaceExistingBinding" value="true"></property>
     <property name="registryPort" value="1099"/>
