@@ -51,7 +51,7 @@ public class Module {
     }
 
     /**
-     * @param d : Enseignement du module
+     * @param e : Enseignement du module
      * @return boolean true si l'ajout de l'enseignment s'est bien passé
      */
     public boolean ajouterEnseignements(Enseignement e){
@@ -65,7 +65,7 @@ public class Module {
     }
 
     /**
-     * @param d : Enseignement du module
+     * @param e : Enseignement du module
      * @return boolean true si la suppression de l'enseignement s'est bien passé
      */
     public boolean supprimerEnseignements(Enseignement e){

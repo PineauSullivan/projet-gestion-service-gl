@@ -43,7 +43,7 @@ public class Enseignement {
 
     /**
      * Setter du module  de l'enseignement
-     * @param module : Module de l'enseignement
+     * @param m : Module de l'enseignement
      */
     public void setModule(Module m){
         module = m;
