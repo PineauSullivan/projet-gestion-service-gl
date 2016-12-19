@@ -1,4 +1,4 @@
-package fr.nantes.gl.model.tests;
+package fr.nantes.gl.model.intervention;
 
 import static org.junit.Assert.*;
 
