@@ -32,14 +32,13 @@ public class Voeu extends Demande {
 
     /**
      * Constructeur de la demande Speciale
-     * @param enseignant : Enseignant
      * @param publie : Boolean
      * @param heures : Date
      * @param preference : Integer
      * @param enseignement : Enseignement
      */
-    public Voeu(Enseignant enseignant, Boolean publie, Date heures, Integer preference, Enseignement enseignement) {
-        super(enseignant, publie, heures);
+    public Voeu(Boolean publie, Date heures, Integer preference, Enseignement enseignement) {
+        super(publie, heures);
         this.preference = preference;
         this.enseignement = enseignement;
     }

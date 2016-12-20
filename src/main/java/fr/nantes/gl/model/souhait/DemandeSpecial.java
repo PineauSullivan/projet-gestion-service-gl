@@ -15,11 +15,10 @@ public class DemandeSpecial extends Demande {
 
     /**
      * Constructeur de la demande Speciale
-     * @param enseignant : Enseignant
      * @param publie : Boolean
      * @param heures : Date
      */
-    public DemandeSpecial(Enseignant enseignant, Boolean publie, Date heures) {
-        super(enseignant, publie, heures);
+    public DemandeSpecial(Boolean publie, Date heures) {
+        super(publie, heures);
     }
 }

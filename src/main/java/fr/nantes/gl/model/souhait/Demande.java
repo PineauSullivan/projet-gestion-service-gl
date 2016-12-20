@@ -26,12 +26,6 @@ public class Demande {
     private int id;
 
     /**
-     * enseignant de la Demande
-     */
-    @ManyToOne
-    Enseignant enseignant;
-
-    /**
      * Boolean pour savoir la Demande est public
      */
     Boolean publie;
@@ -43,12 +37,10 @@ public class Demande {
 
     /**
      * Constructeur de la Demande
-     * @param enseignant : Enseignant
      * @param publie : Boolean
      * @param heures : Date
      */
-    public Demande(Enseignant enseignant, Boolean publie, Date heures) {
-        this.enseignant = enseignant;
+    public Demande(Boolean publie, Date heures) {
         this.publie = publie;
         this.heures = heures;
     }

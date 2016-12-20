@@ -19,13 +19,12 @@ public class DemandeInterventionExterieur extends Demande {
 
     /**
      * Constructeur de la Demande Intervention Exterieur
-     * @param enseignant : Enseignant
      * @param publie : Boolean
      * @param heures : Date
      * @param organisation : String
      */
-    public DemandeInterventionExterieur(Enseignant enseignant, Boolean publie, Date heures, String organisation) {
-        super(enseignant, publie, heures);
+    public DemandeInterventionExterieur(Boolean publie, Date heures, String organisation) {
+        super(publie, heures);
         this.organisation = organisation;
     }
 
