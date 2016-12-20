@@ -1,4 +1,4 @@
-package java.fr.nantes.gl.model.service;
+package fr.nantes.gl.model.service;
 
 import org.junit.Test;
 
