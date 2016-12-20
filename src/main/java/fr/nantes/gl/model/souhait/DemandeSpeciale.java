@@ -11,14 +11,14 @@ import java.util.Date;
  * @author Sullivan Pineau
  *
  */
-public class DemandeSpecial extends Demande {
+public class DemandeSpeciale extends Demande {
 
     /**
      * Constructeur de la demande Speciale
      * @param publie : Boolean
      * @param heures : Date
      */
-    public DemandeSpecial(Boolean publie, Date heures) {
+    public DemandeSpeciale(Boolean publie, Date heures) {
         super(publie, heures);
     }
 }
