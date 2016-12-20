@@ -1,5 +1,15 @@
 package fr.nantes.gl.model.service;
 
+import fr.nantes.gl.model.departement.Departement;
+import fr.nantes.gl.model.departement.Enseignement;
+import fr.nantes.gl.model.enseignant.Enseignant;
+import fr.nantes.gl.model.enseignant.Service;
+import fr.nantes.gl.model.souhait.Demande;
+import fr.nantes.gl.model.souhait.Voeu;
+
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Interface pour gérer le Graphical User Interface du Departement
  *
@@ -9,4 +19,17 @@ package fr.nantes.gl.model.service;
  *
  */
 public interface guiDepartement {
+    boolean emettreVoeu(Voeu voeu);
+    boolean emettreDemande(Demande demande);
+    String consulterEnseignement();
+    boolean publierSouhait(Voeu voeu, Enseignant enseignant);
+    ArrayList<Demande> prendreConnaissanceCours(Departement departement);
+    ArrayList<Enseignement> consulterEnseignementsACouvrir();
+    public ArrayList<Service> affichageService(int mode);
+    boolean affecterEnseignantEnseignementPublic(Enseignant enseignant, Enseignement enseignement, boolean publique);
+    String affichageAlerte();
+    boolean modificationEnseignantEnseignementNonPublic(Enseignement enseignementActuel, Enseignement enseignementModifie, Enseignant enseignant);
+    boolean ajoutEnseignement(Enseignement enseignement);
+    boolean ajoutEnseignant(Enseignant enseignant);
+    ArrayList<Enseignant> getEnseignents();
 }
