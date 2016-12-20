@@ -7,7 +7,7 @@ import fr.nantes.gl.model.enseignant.Service;
 import fr.nantes.gl.model.souhait.Demande;
 import fr.nantes.gl.model.souhait.Voeu;
 
-import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Interface pour gérer les metiers du département
@@ -18,17 +18,17 @@ import java.util.ArrayList;
  *
  */
 public interface metiersDepartement {
-    ArrayList<Demande> consulterVoeuxEnseignant();
+    List<Demande> consulterVoeuxEnseignant();
     boolean publierSouhait(Voeu voeu, Enseignant enseignant);
-    ArrayList<Demande> prendreConnaissanceCours(Departement departement);
-    ArrayList<Enseignement> consulterEnseignementsACouvrir();
-    ArrayList<Service> affichageService(int mode);
+    List<Demande> prendreConnaissanceCours(Departement departement);
+    List<Enseignement> consulterEnseignementsACouvrir();
+    List<Service> affichageService(int mode);
     boolean affecterEnseignantEnseignementPublic(Enseignant enseignant, Enseignement enseignement, boolean publique);
     String affichageAlerte();
     boolean modificationEnseignantEnseignementNonPublic(Enseignement enseignementActuel, Enseignement enseignementModifie, Enseignant enseignant);
     boolean ajoutEnseignement(Enseignement enseignement);
     boolean ajoutEnseignant(Enseignant enseignant);
     String afficherAlerte(Enseignant enseignant);
-    ArrayList<Enseignement> afficherDispo(String critere);
-    ArrayList<Enseignant> getEnseignents();
+    List<Enseignement> afficherDispo(String critere);
+    List<Enseignant> getEnseignents();
 }

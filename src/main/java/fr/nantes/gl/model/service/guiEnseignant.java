@@ -5,7 +5,7 @@ import fr.nantes.gl.model.enseignant.Service;
 import fr.nantes.gl.model.souhait.Demande;
 import fr.nantes.gl.model.souhait.Voeu;
 
-import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Interface pour gérer le Graphical User Interface d'un Enseignant
@@ -17,12 +17,12 @@ import java.util.ArrayList;
  */
 public interface guiEnseignant {
     boolean emettreVoeu(Voeu voeu);
-    ArrayList<Enseignement>  consulterEnseignements(boolean globalement, Demande demande);
+    List<Enseignement>  consulterEnseignements(boolean globalement, Demande demande);
     boolean publierSouhait(Demande demande);
     boolean emettreDemande(Demande demande);
-    ArrayList<Enseignement> prendreConnaissanceCours();
-    ArrayList<Service> afficherService(int mode);
-    ArrayList<Enseignement> afficherDispo(String critere);
+    List<Enseignement> prendreConnaissanceCours();
+    List<Service> afficherService(int mode);
+    List<Enseignement> afficherDispo(String critere);
     String afficherAlerte();
-    boolean modifierlistechoix(ArrayList<Demande> listeDesVoeux);
+    boolean modifierlistechoix(List<Demande> listeDesVoeux);
 }

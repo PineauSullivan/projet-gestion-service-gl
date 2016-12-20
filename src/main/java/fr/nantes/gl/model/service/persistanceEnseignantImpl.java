@@ -4,7 +4,7 @@ import fr.nantes.gl.model.departement.Enseignement;
 import fr.nantes.gl.model.souhait.Demande;
 import fr.nantes.gl.model.souhait.Voeu;
 
-import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Classe pour gérer la persistance des Enseignants
@@ -44,11 +44,11 @@ public class persistanceEnseignantImpl implements  persistanceEnseignant{
     }
 
     /**
-     * @param listeDesVoeux : ArrayList<Demande>
+     * @param listeDesVoeux : List<Demande>
      * @return  boolean, true si la modification de la listedesvoeux s'est bien déroulé
      */
     @Override
-    public boolean modifierlistechoix(ArrayList<Demande> listeDesVoeux) {
+    public boolean modifierlistechoix(List<Demande> listeDesVoeux) {
         return false;
     }
 

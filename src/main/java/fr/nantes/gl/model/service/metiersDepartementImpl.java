@@ -7,7 +7,7 @@ import fr.nantes.gl.model.enseignant.Service;
 import fr.nantes.gl.model.souhait.Demande;
 import fr.nantes.gl.model.souhait.Voeu;
 
-import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Classe pour gérer les metiers du département
@@ -20,11 +20,11 @@ import java.util.ArrayList;
 public class metiersDepartementImpl  implements metiersDepartement {
 
     /**
-     * @return  ArrayList<Demande>,Récupération des choix des enseignants.
+     * @return  List<Demande>,Récupération des choix des enseignants.
 
      */
     @Override
-    public ArrayList<Demande> consulterVoeuxEnseignant(){
+    public List<Demande> consulterVoeuxEnseignant(){
         return null;
     }
 
@@ -40,27 +40,27 @@ public class metiersDepartementImpl  implements metiersDepartement {
 
     /**
      * @param departement : Departement
-     * @return ArrayList<Demande>, des choix des enseignants en fonction d'un département
+     * @return List<Demande>, des choix des enseignants en fonction d'un département
      */
     @Override
-    public ArrayList<Demande> prendreConnaissanceCours(Departement departement) {
+    public List<Demande> prendreConnaissanceCours(Departement departement) {
         return null;
     }
 
     /**
-     * @return ArrayList<Enseignement>, liste des enseignements à couvrir
+     * @return List<Enseignement>, liste des enseignements à couvrir
      */
     @Override
-    public ArrayList<Enseignement> consulterEnseignementsACouvrir() {
+    public List<Enseignement> consulterEnseignementsACouvrir() {
         return null;
     }
 
     /**
      * @param mode : int qui correspond au mode choisis (1: globalement, 2: par modules, 3: par enseignants..)
-     * @return  ArrayList<Service>, services suivant différent modes
+     * @return  List<Service>, services suivant différent modes
      */
     @Override
-    public ArrayList<Service> affichageService(int mode) {
+    public List<Service> affichageService(int mode) {
         return null;
     }
 
@@ -114,10 +114,10 @@ public class metiersDepartementImpl  implements metiersDepartement {
 
     /**
      * @param critere : String
-     * @return  ArrayList<Enseignement> qui correspond a la liste des Enseignement disponible
+     * @return  List<Enseignement> qui correspond a la liste des Enseignement disponible
      */
     @Override
-    public ArrayList<Enseignement> afficherDispo(String critere) {
+    public List<Enseignement> afficherDispo(String critere) {
         return null;
     }
 
@@ -131,10 +131,10 @@ public class metiersDepartementImpl  implements metiersDepartement {
     }
 
     /**
-     * @return  ArrayList<Enseignant>, liste de tous les enseignents
+     * @return  List<Enseignant>, liste de tous les enseignents
      */
     @Override
-    public ArrayList<Enseignant> getEnseignents(){
+    public List<Enseignant> getEnseignents(){
         return null;
     }
 }

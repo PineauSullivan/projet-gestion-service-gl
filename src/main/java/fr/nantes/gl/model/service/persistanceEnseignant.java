@@ -4,7 +4,7 @@ import fr.nantes.gl.model.departement.Enseignement;
 import fr.nantes.gl.model.souhait.Demande;
 import fr.nantes.gl.model.souhait.Voeu;
 
-import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Interface pour gérer la persistance des Enseignants
@@ -18,6 +18,6 @@ public interface persistanceEnseignant {
     boolean emettreVoeu(Voeu voeu);
     boolean publierSouhait(Demande demande);
     boolean emettreDemande(Demande demande);
-    boolean modifierlistechoix(ArrayList<Demande> listeDesVoeux);
+    boolean modifierlistechoix(List<Demande> listeDesVoeux);
     boolean sauvegarderEnseignementEnseignant(Enseignement enseignement);
 }
