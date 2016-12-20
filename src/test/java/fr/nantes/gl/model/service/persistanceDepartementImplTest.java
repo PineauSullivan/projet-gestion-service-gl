@@ -13,18 +13,9 @@ import static org.junit.Assert.*;
  *
  */
 public class persistanceDepartementImplTest {
-    @Test
-    public void emettreVoeu() throws Exception {
-
-    }
 
     @Test
-    public void emettreDemande() throws Exception {
-
-    }
-
-    @Test
-    public void consulterEnseignement() throws Exception {
+    public void consulterVoeuxEnseignant() throws Exception {
 
     }
 

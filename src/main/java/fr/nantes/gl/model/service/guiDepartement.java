@@ -19,13 +19,11 @@ import java.util.List;
  *
  */
 public interface guiDepartement {
-    boolean emettreVoeu(Voeu voeu);
-    boolean emettreDemande(Demande demande);
-    String consulterEnseignement();
+    ArrayList<Demande> consulterVoeuxEnseignant();
     boolean publierSouhait(Voeu voeu, Enseignant enseignant);
     ArrayList<Demande> prendreConnaissanceCours(Departement departement);
     ArrayList<Enseignement> consulterEnseignementsACouvrir();
-    public ArrayList<Service> affichageService(int mode);
+    ArrayList<Service> affichageService(int mode);
     boolean affecterEnseignantEnseignementPublic(Enseignant enseignant, Enseignement enseignement, boolean publique);
     String affichageAlerte();
     boolean modificationEnseignantEnseignementNonPublic(Enseignement enseignementActuel, Enseignement enseignementModifie, Enseignant enseignant);

@@ -18,9 +18,7 @@ import java.util.ArrayList;
  *
  */
 public interface metiersDepartement {
-    boolean emettreVoeu(Voeu voeu);
-    boolean emettreDemande(Demande demande);
-    String consulterEnseignement();
+    ArrayList<Demande> consulterVoeuxEnseignant();
     boolean publierSouhait(Voeu voeu, Enseignant enseignant);
     ArrayList<Demande> prendreConnaissanceCours(Departement departement);
     ArrayList<Enseignement> consulterEnseignementsACouvrir();

@@ -18,27 +18,13 @@ import java.util.ArrayList;
  *
  */
 public class persistanceDepartementImpl implements persistanceDepartement {
-    /**
-     * @param voeu : Voeu
-     * @return boolean, true si l'emission s'est bien déroulé
-     */
-    @Override
-    public boolean emettreVoeu(Voeu voeu) {
-        return false;
-    }
 
     /**
-     * @param demande : Demande
-     * @return boolean, true si l'emission s'est bien déroulé
+     * @return  ArrayList<Demande>,Récupération des choix des enseignants.
+
      */
     @Override
-    public boolean emettreDemande(Demande demande) {
-        return false;
-    }
-
-
-    @Override
-    public String consulterEnseignement() {
+    public ArrayList<Demande> consulterVoeuxEnseignant(){
         return null;
     }
 
