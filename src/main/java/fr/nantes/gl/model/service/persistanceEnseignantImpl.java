@@ -60,4 +60,13 @@ public class persistanceEnseignantImpl implements  persistanceEnseignant{
     public boolean sauvegarderEnseignementEnseignant(Enseignement enseignement){
         return false;
     }
+
+    /**
+     * @return  List<Demande> de l'enseignant enregistrer dans la base donnée
+     */
+    @Override
+    public List<Demande> voirDemandes(){
+        return null;
+    }
+
 }

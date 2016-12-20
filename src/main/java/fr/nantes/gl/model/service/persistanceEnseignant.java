@@ -20,4 +20,5 @@ public interface persistanceEnseignant {
     boolean emettreDemande(Demande demande);
     boolean modifierlistechoix(List<Demande> listeDesVoeux);
     boolean sauvegarderEnseignementEnseignant(Enseignement enseignement);
+    List<Demande> voirDemandes();
 }
